@@ -1,11 +1,21 @@
 
-  # Radhe Radhe Events Website
+# Radhe Radhe Events & Decorations
 
-  This is a code bundle for Radhe Radhe Events Website. The original project is available at https://www.figma.com/design/q068FW5rq3QzdHZtYDAm8E/Radhe-Radhe-Events-Website.
+Professional event decoration and celebration services in Dibai.
 
-  ## Running the code
+## Services
 
-  Run `npm i` to install the dependencies.
+- 💒 Wedding Decoration
+- 🎂 Birthday Decoration  
+- 💍 Engagement & Anniversary
+- 💼 Corporate Events
+- 🎆 Firecrackers & Atishbaazi
 
-  Run `npm run dev` to start the development server.
-  
+## Contact
+
+📞 Phone: +91 90584 29272  
+📍 Location: Dibai
+
+---
+
+**Radhe Radhe Events - Making Your Celebrations Memorable**  
