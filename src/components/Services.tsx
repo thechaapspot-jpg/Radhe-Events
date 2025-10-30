@@ -1,7 +1,7 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Card, CardContent } from './ui/card';
 import { motion } from 'motion/react';
-import { Heart, Cake, Sparkles, Briefcase, ArrowRight } from 'lucide-react';
+import { Heart, Cake, Sparkles, Briefcase, Sparkle, ArrowRight } from 'lucide-react';
 
 export function Services() {
   const services = [
@@ -44,6 +44,16 @@ export function Services() {
       image:
         'https://images.unsplash.com/photo-1606744038221-5e0fa1c68fe6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjb3Jwb3JhdGUlMjBldmVudCUyMHN0YWdlfGVufDF8fHx8MTc2MTgzMTUzOHww&ixlib=rb-4.1.0&q=80&w=1080',
       color: 'from-amber-500 to-orange-500',
+    },
+    {
+      id: 5,
+      title: 'Firecrackers & Atishbaazi',
+      icon: Sparkle,
+      description:
+        'Light up your celebrations with spectacular fireworks! Premium quality firecrackers, sparklers, and professional atishbaazi displays that add magic to your events.',
+      image:
+        'https://images.unsplash.com/photo-1467810563316-b5476525c0f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+      color: 'from-yellow-500 to-red-500',
     },
   ];
 

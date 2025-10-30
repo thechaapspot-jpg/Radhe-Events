@@ -11,6 +11,7 @@ import { BackgroundParticles } from './components/BackgroundParticles';
 import { AboutModal } from './components/AboutModal';
 import { AudioPlayer } from './components/AudioPlayer';
 import { Founder } from './components/Founder';
+import { AnnouncementTicker } from './components/AnnouncementTicker';
 
 export default function App() {
   const [currentSection, setCurrentSection] = useState('home');
@@ -74,6 +75,8 @@ export default function App() {
           currentSection={currentSection}
           onAboutClick={handleAboutClick}
         />
+        
+        <AnnouncementTicker />
 
         <main>
           <div id="home">
