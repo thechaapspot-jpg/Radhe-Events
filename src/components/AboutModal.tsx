@@ -86,11 +86,17 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
                 {/* Image */}
                 <div className="relative">
                   <div className="absolute -inset-6 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 rounded-3xl blur-2xl"></div>
-                  <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1732382643619-872165f61891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjB3ZWRkaW5nJTIwZGVjb3JhdGlvbiUyMG1hbmRhcHxlbnwxfHx8fDE3NjE4Mjk5Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                    alt="About Radhe Radhe Events"
-                    className="relative rounded-3xl shadow-2xl w-full h-[400px] object-cover"
-                  />
+                  <div className="relative rounded-3xl shadow-2xl overflow-hidden bg-gradient-to-br from-primary/5 to-secondary/5 p-8">
+                    <img
+                      src="/Manish ji.jpeg"
+                      alt="Manish Ji - Founder of Radhe Radhe Events"
+                      className="relative rounded-2xl shadow-xl w-full h-[400px] object-cover object-center"
+                    />
+                    <div className="absolute bottom-12 left-12 right-12 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg">
+                      <p className="text-foreground font-semibold text-lg">Manish Ji</p>
+                      <p className="text-primary font-medium">Founder & Lead Designer</p>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Content */}
@@ -119,11 +125,12 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
 
                   <div className="mt-8 bg-gradient-to-br from-primary/5 to-secondary/5 p-6 rounded-2xl border border-primary/10">
                     <div className="flex items-center gap-4">
-                      <div
-                        className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center text-white shadow-lg"
-                        style={{ fontSize: '1.5rem' }}
-                      >
-                        M
+                      <div className="relative w-16 h-16 flex-shrink-0">
+                        <img
+                          src="/Manish ji.jpeg"
+                          alt="Manish Ji - Founder"
+                          className="w-full h-full object-cover rounded-full shadow-lg ring-2 ring-primary/20"
+                        />
                       </div>
                       <div>
                         <p style={{ fontWeight: '600', fontSize: '1.125rem' }}>Manish Ji</p>

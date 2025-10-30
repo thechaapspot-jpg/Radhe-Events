@@ -10,6 +10,7 @@ import { WhatsAppButton } from './components/WhatsAppButton';
 import { BackgroundParticles } from './components/BackgroundParticles';
 import { AboutModal } from './components/AboutModal';
 import { AudioPlayer } from './components/AudioPlayer';
+import { Founder } from './components/Founder';
 
 export default function App() {
   const [currentSection, setCurrentSection] = useState('home');
@@ -93,6 +94,8 @@ export default function App() {
             <Contact />
           </div>
         </main>
+
+        <Founder />
 
         <Footer onAboutClick={handleAboutClick} />
         <WhatsAppButton />
