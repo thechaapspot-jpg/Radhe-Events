@@ -62,6 +62,7 @@ export function Navbar({ onNavigate, currentSection, onAboutClick }: NavbarProps
                 src="/Brand-logo.jpeg" 
                 alt="Radhe Events Brand" 
                 className="h-14 w-auto object-contain"
+                style={{ imageRendering: '-webkit-optimize-contrast' }}
               />
             </motion.div>
             
@@ -127,7 +128,8 @@ export function Navbar({ onNavigate, currentSection, onAboutClick }: NavbarProps
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden overflow-hidden"
+              transition={{ duration: 0.2 }}
+              className="md:hidden"
             >
               <div className="pb-4 pt-2">
                 {navItems.map((item) => (
