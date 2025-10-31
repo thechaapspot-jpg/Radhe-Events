@@ -61,8 +61,11 @@ export function Navbar({ onNavigate, currentSection, onAboutClick }: NavbarProps
               <img 
                 src="/Brand-logo.jpeg" 
                 alt="Radhe Events Brand" 
-                className="h-14 w-auto object-contain"
-                style={{ imageRendering: '-webkit-optimize-contrast' }}
+                className="h-16 w-auto object-contain"
+                style={{ 
+                  imageRendering: 'crisp-edges',
+                  WebkitFontSmoothing: 'antialiased'
+                }}
               />
             </motion.div>
             

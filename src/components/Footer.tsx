@@ -126,7 +126,10 @@ export function Footer({ onAboutClick }: FooterProps) {
             src="/Brand-logo.jpeg" 
             alt="Radhe Events Brand" 
             className="h-24 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-            style={{ imageRendering: '-webkit-optimize-contrast' }}
+            style={{ 
+              imageRendering: 'crisp-edges',
+              WebkitFontSmoothing: 'antialiased'
+            }}
           />
         </div>
 

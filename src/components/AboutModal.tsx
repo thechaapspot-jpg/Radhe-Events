@@ -72,7 +72,10 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
                   src="/Brand-logo.jpeg" 
                   alt="Radhe Events Brand" 
                   className="h-20 w-auto object-contain"
-                  style={{ imageRendering: '-webkit-optimize-contrast' }}
+                  style={{ 
+                    imageRendering: 'crisp-edges',
+                    WebkitFontSmoothing: 'antialiased'
+                  }}
                 />
               </div>
               
