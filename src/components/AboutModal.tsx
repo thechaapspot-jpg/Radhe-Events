@@ -66,6 +66,15 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
 
             {/* Content */}
             <div className="px-6 md:px-12 pb-12 max-w-6xl mx-auto">
+              {/* Brand Logo */}
+              <div className="flex justify-center mb-8">
+                <img 
+                  src="/Brand-logo.jpeg" 
+                  alt="Radhe Events Brand" 
+                  className="h-20 w-auto object-contain"
+                />
+              </div>
+              
               <div className="text-center mb-12">
                 <h2
                   className="text-foreground mb-4"

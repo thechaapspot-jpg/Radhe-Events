@@ -48,16 +48,34 @@ export function Navbar({ onNavigate, currentSection, onAboutClick }: NavbarProps
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
-            className="cursor-pointer"
-            onClick={() => handleNavClick('home')}
-          >
-            <Logo size="small" />
-          </motion.div>
+          {/* Brand Logo + Main Logo */}
+          <div className="flex items-center gap-4">
+            {/* Brand Logo */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.1 }}
+              className="cursor-pointer"
+              onClick={() => handleNavClick('home')}
+            >
+              <img 
+                src="/Brand-logo.jpeg" 
+                alt="Radhe Events Brand" 
+                className="h-14 w-auto object-contain"
+              />
+            </motion.div>
+            
+            {/* Main Logo */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}
+              className="cursor-pointer"
+              onClick={() => handleNavClick('home')}
+            >
+              <Logo size="small" />
+            </motion.div>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

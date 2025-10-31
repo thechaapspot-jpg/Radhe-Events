@@ -22,6 +22,7 @@ export function Footer({ onAboutClick }: FooterProps) {
     'Engagement Decoration',
     'Anniversary Celebration',
     'Corporate Events',
+    'Firecrackers & Atishbaazi',
     'Custom Events',
   ];
 
@@ -117,6 +118,15 @@ export function Footer({ onAboutClick }: FooterProps) {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Brand Logo - Centered */}
+        <div className="flex justify-center mb-8">
+          <img 
+            src="/Brand-logo.jpeg" 
+            alt="Radhe Events Brand" 
+            className="h-24 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+          />
         </div>
 
         {/* Bottom Bar */}
